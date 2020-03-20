@@ -1,0 +1,641 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 3vh 2vw 2vh 1vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+a {
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #2D3A58;
+}
+
+/* header*/
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    margin-top: 1vh;
+    margin-bottom: 0;
+
+}
+
+header>img {
+    height: 30vh;
+    margin: auto;
+    grid-area: 1/1/2/2;
+}
+
+header>a {
+    grid-area: 1/3/1/3;
+    border: none;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    background-color: #FF946D;
+    font: bold 1.4em "Roboto";
+    color: black;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+header>section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin: auto;
+}
+
+h1 {
+    color: #FF946D;
+    font-size: 3em;
+    grid-area: 1/2/1/3;
+}
+
+h2 {
+    color: #FF946D;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 1.8em;
+    grid-area: 2/2/2/4;
+}
+
+/* recherche mots-clefs*/
+
+body>div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 1vh;
+}
+
+body>div:first-of-type>div>input {
+    background-color: #FEDACD;
+    border: 0;
+    padding: 2vh 2vw;
+    font-size: 3vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+body>div:first-of-type>div>button {
+    background-color: #FF946D;
+    padding: 1.6vh 1vw 1.7vh 1vw;
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body>div:first-of-type>div {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    grid-column: 4/5;
+    margin-right: 7vw;
+}
+
+/* bouton metiers*/
+
+body>div:nth-of-type(2)>button:first-of-type {
+    border: none;
+    padding: 1.7vh 3vw;
+    border-radius: 10px;
+    background-color: #FF946D;
+    font: bold 3.6vh "Roboto";
+    color: black;
+    margin-left: 4vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3vh;
+}
+
+button:hover {
+    transform: scale(1);
+    box-shadow: 0 0 65px #FEDACD inset, 0 0 20px #FF946D, 0 0 15px #FEDACD;
+}
+
+body>div:nth-of-type(2)>button:first-of-type>img {
+    height: 3vh;
+    margin-right: 1vw;
+}
+
+
+/* Menu des métiers */
+
+body>section:first-of-type {
+    background-color: #FEDACD;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15vh 1fr 1fr;
+    margin: auto auto 3vh auto;
+    border-radius: 15px;
+    width: 92%;
+}
+
+body>section:first-of-type>h3 {
+    grid-area: 1/1/1/5;
+    margin: auto;
+    font-size: 6vh;
+}
+
+body>section:first-of-type>a {
+    text-align: center;
+    background: linear-gradient(to bottom right, #FF946D, #FEDACD);
+    border-radius: 10px;
+    margin: 10%;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+body>section:first-of-type {
+    display: none;
+}
+
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+main>section {
+    grid-area: 1/1/1/1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main>section>img {
+    width: 70%;
+    margin: auto auto 1vh 4vw;
+    border-radius: 20px;
+}
+
+main>section>h3 {
+    color: #FF946D;
+    text-align: center;
+    margin: auto 0 auto 0;
+    font-size: 4em;
+}
+
+main>div {
+    grid-area: 2/1/2/1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: auto;
+}
+
+main>article {
+    grid-area: 3/1/3/1;
+    margin: 2vh auto 1vh auto;
+    width: 80%;
+    height: auto;
+    background-color: #FEDACD;
+    border-radius: 10px;
+    padding: 1vh 3vw 4vh 3vw;
+}
+
+main>div>button {
+    border: none;
+    padding: 1.6vh 3vw;
+    border-radius: 10px;
+    background-color: #FF946D;
+    font: bold 1.3em "Roboto";
+    color: black;
+    margin-left: 4vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 2vh auto 1vh auto;
+}
+
+main>div>button:active {
+    background-color: rgba(255, 203, 184, 1);
+}
+
+article {
+    display: none;
+}
+
+article>h4 {
+    font-size: 2em;
+    color: #FF946D;
+    opacity: 0.9;
+    margin: 4vh auto 3vh auto;
+    text-align: center;
+}
+
+article>ul {
+    margin-left: 5vw;
+}
+
+article>ul>li {
+    font-size: 1.2em;
+}
+
+/* footer */
+
+footer>div>a>img {
+    max-width: 4vw;
+    margin-left: 1.6vw;
+    margin-right: 1.6vw;
+}
+
+footer>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    margin: 10vh 0 3vh 0;
+}
+
+footer>a {
+    font-size: 3vh;
+    color: #FF946D;
+    text-decoration: none;
+}
+
+footer>a:hover {
+    color: #FEDACD;
+}
+
+/* section */
+
+h6 {
+    color: #FF946D;
+    font-size: 1.4em;
+    margin: 2vh auto 2vh 4vw;
+}
+
+main>article>p {
+    margin: 1vh 4vw 2vh 4vw;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+main>a:last-of-type {
+    text-align: center;
+    background: linear-gradient(to bottom right, #FF946D, #FEDACD);
+    border-radius: 10px;
+    margin: 2vh auto 2vh auto;
+    padding: 2vh 3vw 2vh 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Roboto';
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    button,
+    a {
+        font-family: 'Roboto';
+    }
+
+    body {
+        background-color: #2D3A58;
+        margin: 3vh 2vw 3vh 2vw;
+    }
+
+    /* header*/
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        margin-top: 1vh;
+        margin-bottom: 0;
+
+    }
+
+    header>img {
+        height: 10vh;
+        margin: auto;
+        grid-area: 1/1/2/2;
+    }
+
+    header>section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        margin: auto;
+    }
+
+    h1 {
+        color: #FF946D;
+        font-size: 3em;
+        grid-area: 1/2/1/3;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: #FF946D;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        grid-area: 2/2/2/4;
+    }
+
+    header>a {
+        grid-area: 1/3/1/3;
+        border: none;
+        padding: 1vh 2vw;
+        border-radius: 10px;
+        background-color: #FF946D;
+        font: bold 1.4em "Roboto";
+        color: black;
+        margin: auto;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* recherche mots-clefs*/
+
+    body>div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 1vh;
+    }
+
+    body>div:first-of-type>div>input {
+        background-color: #FEDACD;
+        border: 0;
+        padding: 1vh 1vw;
+        font-size: 3vh;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 30vw;
+        height: auto;
+    }
+
+    body>div:first-of-type>div>button {
+        background-color: #FF946D;
+        padding: 0.6vh 1vw 0.6vh 1vw;
+        border: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    body>div:first-of-type>div {
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        grid-column: 4/5;
+        margin-right: 7vw;
+    }
+
+    /* bouton metiers*/
+
+    body>div:nth-of-type(2) {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2vh;
+    }
+
+    body>div:nth-of-type(2)>button:first-of-type {
+        border: none;
+        padding: 1vh 4vw;
+        border-radius: 10px;
+        background-color: #FEDACD;
+        font: bold 1.7em 'Roboto';
+        color: black;
+        margin-left: 4vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 4vh;
+
+    }
+
+    button:hover {
+        transform: scale(1);
+        box-shadow: 0 0 65px #FEDACD inset, 0 0 20px #FF946D, 0 0 15px #FEDACD;
+    }
+
+    body>div:nth-of-type(2)>button:first-of-type>img {
+        height: 2vh;
+        margin: auto 1vw auto auto;
+    }
+
+
+    section>h4 {
+        color: #FF946D;
+    }
+
+    /* Menu des métiers */
+
+    body>section:first-of-type {
+        background-color: #FEDACD;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 1fr 1fr;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+    }
+
+    body>section:first-of-type>h3 {
+        grid-area: 1/1/1/5;
+        margin: 2vh 4vw 2vh 4vw;
+        font-size: 1em;
+    }
+
+    body>section:first-of-type>a {
+        text-align: center;
+        background: linear-gradient(to bottom right, #FF946D, #FEDACD);
+        border-radius: 10px;
+        margin: 2vh;
+        padding: 1.2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    body>section:first-of-type {
+        display: none;
+    }
+
+    /* main */
+
+    main {
+        display: grid;
+        grid-template-rows: auto 20vh auto;
+    }
+
+    main>section {
+        grid-area: 1/1/1/1;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    main>section>img {
+        width: 90%;
+        margin: auto
+    }
+
+    main>section>h3 {
+        color: #FF946D;
+        text-align: center;
+        margin: 2vh 0 auto 0;
+        font-size: 3em;
+    }
+
+    main>div {
+        grid-area: 2/1/2/1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin: 1vh auto 1vh auto;
+    }
+
+    main>article {
+        grid-area: 3/1/3/1;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        background-color: #FEDACD;
+        border-radius: 10px;
+        padding: 4vh 3vw 10vh 3vw;
+    }
+
+    main>div>button {
+        border: none;
+        padding: 1.4vh 2.3vw;
+        border-radius: 10px;
+        background-color: #FF946D;
+        font: bold 1.3em "Roboto";
+        color: black;
+        margin: 1vh 2vw 1vh 2vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    main>div>button:active {
+        background-color: rgba(255, 203, 184, 1);
+    }
+
+    article {
+        display: none;
+    }
+
+    article>h4 {
+        font-size: 1.8em;
+        color: #FF946D;
+        opacity: 0.9;
+        margin: 1vh auto 2vh auto;
+        text-align: center;
+    }
+
+    main>a:last-of-type {
+        text-align: center;
+        background: linear-gradient(to bottom right, #FF946D, #FEDACD);
+        border-radius: 10px;
+        margin: 1vh auto auto auto;
+        padding: 1vh 1vw 1vh 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* footer */
+
+    footer>div>a>img {
+        max-width: 4vw;
+        margin-left: 1.6vw;
+        margin-right: 1.6vw;
+    }
+
+    footer>div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-content: center;
+        justify-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        justify-items: center;
+        margin: 3vh 0 3vh 0;
+    }
+
+    footer>a {
+        font-size: 1.2em;
+        color: #FF946D;
+    }
+
+}
